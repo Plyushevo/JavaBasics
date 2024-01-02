@@ -5,22 +5,23 @@
     "body": ["System.out.println(${1:});"],
     "description": "print to console"
   },
+	"SystemRead": {
+    "prefix": ["sysr", "sysin"],
+    "body": ["System.in.read();"],
+    "description": "print to console"
+  },
 	"public no": {
     "prefix": ["pbl", "public no {}"],
     "body": ["public static void main(String[] args) \n $0"],
     "description": "no {}"
   },
-
 	"trows java": {
     "prefix": ["trjv", "tro"],
-    "body": ["throws java.io.IOException {\n
-			$0
-		}"],
+    "body": ["throws java.io.IOException {", "\t$0", "}"],
     "description": "print to console"
   },
-
 	"for cicle": {
-		"prefix": ["forj", "fori"],
+		"prefix": ["forc"],
 		"body": ["for (int i = $1; i < $2; i++) {", "\t$0", "}"],
 		"description": "for cycle"
 	}
