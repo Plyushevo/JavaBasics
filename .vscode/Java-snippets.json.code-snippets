@@ -11,9 +11,14 @@
     "description": "print to console"
   },
 	"public no": {
-    "prefix": ["pbl", "public no {}"],
-    "body": ["public static void main(String[] args) \n $0"],
+    "prefix": ["public no {}"],
+    "body": ["public static void main(String[] args) \n\t$0"],
     "description": "no {}"
+  },
+	"public static void": {
+    "prefix": ["pbl", "public static"],
+    "body": ["public static void main(String[] args) {", "\t$0", "}"],
+    "description": "publick static void main {}"
   },
 	"trows java": {
     "prefix": ["trjv", "tro"],
