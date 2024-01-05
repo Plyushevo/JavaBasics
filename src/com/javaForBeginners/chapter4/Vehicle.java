@@ -1,3 +1,4 @@
+package src.com.javaForBeginners.chapter4;
 class Vehicle {
   int passengers; 
   int fuelcap;
