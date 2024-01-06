@@ -1,7 +1,5 @@
 package src.com.javaForBeginners.chapter5array.tasks;
 
-
-
 class Queue {
   char[] q;
   int putloc, getloc;
@@ -10,7 +8,6 @@ class Queue {
     q = new char[size];
     putloc = getloc = 0;
   }
-
   void put(char ch) {
     if (putloc == q.length) {
       System.out.println(" - Очередь переполнена.");
@@ -26,7 +23,6 @@ class Queue {
     return q[getloc++];
   }
 }
-
 
 public class QDemo {
   public static void main(String[] args) {
